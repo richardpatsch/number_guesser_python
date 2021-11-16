@@ -1,5 +1,6 @@
 import math
 import random
+import boto3
 
 
 def generate_random_number(max):
@@ -16,7 +17,7 @@ def check_number(solution, max_number, modulo, residual_class):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    max_number = int(math.pow(10, 4))
+    max_number = int(math.pow(10, 10))
     random_number = generate_random_number(max_number)
 
     print('max: ', max_number)
